@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Запомни брат</h1>
+
+<img src= "https://sun9-18.userapi.com/sun9-8/impf/c857628/v857628553/50439/ntrl0TZTASQ.jpg?size=604x454&quality=96&sign=4c8fc9efac9911fd02a9092c8f06f636&type=album" width="200" height="200" alt="рандомная картинка">
+
+<button id="button" style="position: absolute">Да.</button>
+<script>
+    const button = document.getElementById("button");
+    button.style.top = window.innerHeight/2 + "px";
+    button.style.color =
+    button.style.left = window.innerWidth/2 + "px";
+    button.addEventListener("mouseenter", () => {
+        button.style.top = (Math.random() * window.innerHeight) + "px";
+        button.style.left = (Math.random()* window.innerWidth) + "px";
+    })
+</script>
+
+</body>
+</html>
